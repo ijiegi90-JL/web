@@ -19,7 +19,7 @@ export default function TrailerModal({ open, onOpenChange, videoId }: Props) {
     {videoId ? (
       <YouTube videoId={videoId} opts={{ width: "100%", height: "520", playerVars: { autoplay: 1 } }} />
     ) : (
-      <div className="p-6 text-white">Trailer not found.</div>
+     <div className="p-6 text-white">...</div>
     )}
   </DialogContent>
 </Dialog>
